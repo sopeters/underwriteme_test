@@ -1,3 +1,5 @@
 ecsdeploy: 
   image: silintl/ecs-deploy:latest 
   env_file: .env
+  volumes: 
+    - ~/.aws:/root/.aws
