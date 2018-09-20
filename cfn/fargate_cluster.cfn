@@ -1,6 +1,6 @@
 
 AWSTemplateFormatVersion: 2010-09-09
-Description: An example CloudFormation template for Fargate.
+Description: UnderwriteMe CloudFormation template for Fargate.
 Parameters:
   VPC:
     Type: AWS::EC2::VPC::Id
@@ -11,7 +11,7 @@ Parameters:
   Image:
     Type: String
     # Update with the Docker image. "You can use images in the Docker Hub registry or specify other repositories (repository-url/image:tag)."
-    Default: 676197543816.dkr.ecr.ap-southeast-2.amazonaws.com/underwriteme_test:latest
+    Default: 676197543816.dkr.ecr.ap-southeast-2.amazonaws.com/underwrite_me:latest
   ServiceName:
     Type: String
     # update with the name of the service

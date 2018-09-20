@@ -9,13 +9,22 @@ Pre-Requisites:
 
 Installation:
 * Setup initial ECR Repo & adjust Makefile ECR URL
+
+* run "make" to build Docker Image
+* run "make dockerPush" to upload initial image into ECR
+
 * Setup initial ECS/Fargate Cluster (using AWS Console or aws cli)
   - StackName: UnderwriteMe
   - ServiceName: UnderwriteMeService
-  - Reference ECR
+  - Reference ECR Repo
+  - Select 2 different Subnets and VPC
 
-run "make" to build Docker Image
-run "make deploy" to cutover to new version
+  -> Note Output URL (ELB URL) for access later
+
+Updating the image:
+* Update Version number in Makefile
+* run "make" to build
+* run "make deploy" to upload and cutover to new version
 
 Next steps / enhancements:
-* Make Blue / Green deployments using https://github.com/silinternational/ecs-deploy
+* Make Blue / Green deployments 

@@ -1,6 +1,6 @@
-VERSION = 0.4
-DOCKER_IMAGE = speters/underwriteme_test
-ECR_REPO = 676197543816.dkr.ecr.ap-southeast-2.amazonaws.com/underwriteme_test
+VERSION = 0.5
+DOCKER_IMAGE = speters/underwriteme
+ECR_REPO = 676197543816.dkr.ecr.ap-southeast-2.amazonaws.com/underwrite_me
 
 dockerBuild:
 	docker build --no-cache -t $(DOCKER_IMAGE):$(VERSION) .
