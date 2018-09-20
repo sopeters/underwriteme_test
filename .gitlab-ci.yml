@@ -1,0 +1,7 @@
+image: golang:1.9
+
+stages:
+  - test
+  - build
+
+
