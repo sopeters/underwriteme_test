@@ -8,11 +8,13 @@ Pre-Requisites:
 * ECR Repository URL for Docker images (needed in Makefile)
 
 Installation:
-* Adjust Makefile ECR URL
+* Setup initial ECR Repo & adjust Makefile ECR URL
 * Setup initial ECS/Fargate Cluster (using AWS Console or aws cli)
+  - StackName: UnderwriteMe
+  - ServiceName: UnderwriteMeService
+  - Reference ECR
 
 run "make" to build Docker Image
-run "make dockerPush" to push into ECR
 run "make deploy" to cutover to new version
 
 Next steps / enhancements:

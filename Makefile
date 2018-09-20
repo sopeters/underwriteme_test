@@ -1,4 +1,4 @@
-VERSION = 0.3
+VERSION = 0.4
 DOCKER_IMAGE = speters/underwriteme_test
 ECR_REPO = 676197543816.dkr.ecr.ap-southeast-2.amazonaws.com/underwriteme_test
 
